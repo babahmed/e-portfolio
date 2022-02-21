@@ -8,7 +8,7 @@
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "file:///C:/Users/BABATUNDE/Downloads/chillaid/index.html",
+            "url": "file:///C:/Users/BABATUNDE/source/repos/e-portfolio/e-portfolio/index.html",
             "webRoot": "${workspaceFolder}"
         }
     ]
