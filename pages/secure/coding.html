@@ -436,72 +436,13 @@ Licence URI: https://www.os-templates.com/template-terms
                 </pre> 
               </div>
 
-              <p>Pylint recomendation</p>
+              <p>Flask8 recomendation</p>
 
               <div class="comcont">
                 <pre>
                   <code>
-                    odio@fridaycrater-depositmonaco:~/workspace$ flake8 metricTest.py
-                    metricTest.py:2:1: E265 block comment should start with '# '
-                    metricTest.py:2:48: W291 trailing whitespace
+                    $ flake8 metricTest.py
                     metricTest.py:13:8: E999 SyntaxError: invalid syntax
-                    metricTest.py:16:1: E112 expected an indented block
-                    metricTest.py:20:1: E128 continuation line under-indented for visual indent
-                    metricTest.py:21:1: E128 continuation line under-indented for visual indent
-                    metricTest.py:22:1: E128 continuation line under-indented for visual indent
-                    metricTest.py:23:1: E112 expected an indented block
-                    metricTest.py:27:8: E225 missing whitespace around operator
-                    metricTest.py:28:1: E112 expected an indented block
-                    metricTest.py:30:3: E261 at least two spaces before inline comment
-                    metricTest.py:31:8: E225 missing whitespace around operator
-                    metricTest.py:31:17: E225 missing whitespace around operator
-                    metricTest.py:32:1: E112 expected an indented block
-                    metricTest.py:34:3: E261 at least two spaces before inline comment
-                    metricTest.py:34:80: E501 line too long (83 > 79 characters)
-                    metricTest.py:35:2: E201 whitespace after '['
-                    metricTest.py:35:5: E202 whitespace before ']'
-                    metricTest.py:36:8: E225 missing whitespace around operator
-                    metricTest.py:37:1: E112 expected an indented block
-                    metricTest.py:37:8: E225 missing whitespace around operator
-                    metricTest.py:38:1: E112 expected an indented block
-                    metricTest.py:38:3: E261 at least two spaces before inline comment
-                    metricTest.py:39:22: E231 missing whitespace after ','
-                    metricTest.py:40:10: E225 missing whitespace around operator
-                    metricTest.py:41:1: E112 expected an indented block
-                    metricTest.py:41:3: E261 at least two spaces before inline comment
-                    metricTest.py:42:35: E231 missing whitespace after ','
-                    metricTest.py:42:45: E231 missing whitespace after ','
-                    metricTest.py:43:1: E128 continuation line under-indented for visual indent
-                    metricTest.py:44:1: E128 continuation line under-indented for visual indent
-                    metricTest.py:45:10: E225 missing whitespace around operator
-                    metricTest.py:46:1: E112 expected an indented block
-                    metricTest.py:46:3: E261 at least two spaces before inline comment
-                    metricTest.py:48:1: E128 continuation line under-indented for visual indent
-                    metricTest.py:52:1: E112 expected an indented block
-                    metricTest.py:54:24: E231 missing whitespace after ','
-                    metricTest.py:55:1: E112 expected an indented block
-                    metricTest.py:59:1: E112 expected an indented block
-                    metricTest.py:62:1: E112 expected an indented block
-                    metricTest.py:63:13: E225 missing whitespace around operator
-                    metricTest.py:64:1: E112 expected an indented block
-                    metricTest.py:65:10: E225 missing whitespace around operator
-                    metricTest.py:66:1: E112 expected an indented block
-                    metricTest.py:66:12: E225 missing whitespace around operator
-                    metricTest.py:69:1: E112 expected an indented block
-                    metricTest.py:72:1: E112 expected an indented block
-                    metricTest.py:74:17: E231 missing whitespace after ','
-                    metricTest.py:75:1: E112 expected an indented block
-                    metricTest.py:75:8: E225 missing whitespace around operator
-                    metricTest.py:76:1: E112 expected an indented block
-                    metricTest.py:77:8: E231 missing whitespace after ':'
-                    metricTest.py:78:2: E201 whitespace after '['
-                    metricTest.py:78:5: E202 whitespace before ']'
-                    metricTest.py:82:1: E112 expected an indented block
-                    metricTest.py:83:13: E225 missing whitespace around operator
-                    metricTest.py:84:1: E112 expected an indented block
-                    metricTest.py:86:1: E112 expected an indented block
-                    metricTest.py:86:19: W292 no newline at end of file
-                    codio@fridaycrater-depositmonaco:~/workspace$ 
                   </code>
                 </pre> 
               </div>
@@ -881,73 +822,11 @@ Licence URI: https://www.os-templates.com/template-terms
               </pre> 
             </div>
             <p>Running the code</p>
+            
             <img src="../../images/secure/list.png">
-            <img src="../../images/secure/list.png">
-          </article>
-        </li>
-
-        <li>
-          <article id="sums2">
-            <header>
-              <figure class="avatar"><img src="../../images/demo/avatar.png" alt=""></figure>
-              <address>
-              <a>StyleLint Test</a>
-              </address>
-              <time datetime="2022-02-21T08:16+00:00">Monday, 21<sup>st</sup> February 2022 @06:00:00</time>
-            </header>
-
-            <p>Original Code</p>
-            <div class="comcont">
-              <pre>
-                <code>
-                  # CODE SOURCE: SOFTWARE ARCHITECTURE WITH PYTHON 
-
-                  def factorial(n):
-                  """ Return factorial of n """
-                  if n == 0:
-                  return 1
-                  else:
-                  return n*factorial(n-1) 
-                </code>
-              </pre> 
-            </div>
-            <p>Running the code and pylint returned</p>
-            <div class="comcont">
-              <pre>
-                <code>
-                  codio@fridaycrater-depositmonaco:~/workspace$ python3 styleLint.py
-                    File "styleLint.py", line 5
-                      """ Return factorial of n """
-                                                  ^
-                  IndentationError: expected an indented block
-                  codio@fridaycrater-depositmonaco:~/workspace$ pylint styleLint.py
-                  ************* Module styleLint
-                  styleLint.py:5:29: E0001: invalid syntax (unknown, line 5) (syntax-error)
-                  codio@fridaycrater-depositmonaco:~/workspace$ 
-                </code>
-              </pre> 
-            </div>
-            <p>Initial error was as a result of the print method not bieng called properly, However, after fixing this, other erroe popped up.</p>
-
-            <p>Fixed version</p>
-            <div class="comcont">
-              <pre>
-                <code>                 
-                  
-                  # CODE SOURCE: SOFTWARE ARCHITECTURE WITH PYTHON
-                  """ Return factorial of n """
-                  
-                  def factorial(number):
-                      """ Return factorial of n """
-                      if number == 0:
-                          return 1
-                      return number*factorial(number-1)
-                </code>
-              </pre> 
-            </div>
-
-            <p>File was also renamed to style_lint.py as recommended by pylint.</p>
-
+            <p>LIST</p>
+            <img src="../../images/secure/help.png">
+            <p>HELP</p>
           </article>
         </li>
 
