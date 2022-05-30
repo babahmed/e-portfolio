@@ -830,6 +830,154 @@ Licence URI: https://www.os-templates.com/template-terms
           </article>
         </li>
 
+        <li>
+          <article id="tower">
+            <header>
+              <figure class="avatar"><img src="../../images/demo/avatar.png" alt=""></figure>
+              <address>
+              <a>Tower of Hanoi</a>
+              </address>
+              <time datetime="2022-02-21T08:16+00:00">Monday, 21<sup>st</sup> February 2022 @06:00:00</time>
+            </header>
+
+            <p>Recursion - solution in python</p>
+            <div class="comcont">
+              <pre>
+                <code>
+                  def tower_of_hanoi(number_of_disks , source, destination, auxiliary):
+                      if number_of_disks==1:
+                          print ("Move disk 1 from source",source,"to destination",destination)
+                          return
+                          tower_of_hanoi(number_of_disks-1, source, auxiliary, destination)
+                      print ("Move disk",number_of_disks,"from source",source,"to destination",destination)
+                      tower_of_hanoi(n-1, auxiliary, destination, source)
+                            
+                  if __name__ == '__main__':
+                  number_of_disks = input("Enter number of disks")
+                  tower_of_hanoi(number_of_disks, 'A', 'B', 'C')
+
+                </code>
+              </pre> 
+            </div>
+
+          </article>
+        </li>
+
+        <li>
+          <article id="regex">
+            <header>
+              <figure class="avatar"><img src="../../images/demo/avatar.png" alt=""></figure>
+              <address>
+              <a>Tower of Hanoi</a>
+              </address>
+              <time datetime="2022-02-21T08:16+00:00">Monday, 21<sup>st</sup> February 2022 @06:00:00</time>
+            </header>
+
+            <p>Recursion - solution in python</p>
+            <div class="comcont">
+              <pre>
+                <code>
+                  import re
+
+                  UK_POSTAL_CODE_PATTERN = r'^([Gg][Ii][Rr] 0[Aa]{2})|((([A-Za-z][0-9]{1,2})|(([A-Za-z][A-Ha-hJ-Yj-y][0-9]{1,2})|(([AZa-z][0-9][A-Za-z])|([A-Za-z][A-Ha-hJ-Yj-y][0-9]?[A-Za-z]))))[0-9][A-Za-z]{2})$'
+                  
+                  def validate_postal_code(postal_code):
+                    print(re.match(UK_POSTAL_CODE_PATTERN, postal_code)) 
+                  
+                  if __name__ == '__main__':
+                       code = input("Enter postal code")
+                       validate_postal_code(code)
+
+                </code>
+              </pre> 
+            </div>
+
+          </article>
+        </li>
+
+        <li>
+          <article id="enc">
+            <header>
+              <figure class="avatar"><img src="../../images/demo/avatar.png" alt=""></figure>
+              <address>
+              <a>Cryptography</a>
+              </address>
+              <time datetime="2022-02-21T08:16+00:00">Monday, 21<sup>st</sup> February 2022 @06:00:00</time>
+            </header>
+
+            <p>Create a python program in Codio (you can use the Jupyter Notebooks space provided in the Codio resources section) that can take a text file and output an encrypted version as a file in your folder on the Codio system</p>
+            <div class="comcont">
+              <pre>
+                <code>
+                  from cryptography.fernet import Fernet
+
+                  class Encryptor():
+
+                      def key_create(self):
+                          key = Fernet.generate_key()
+                          return key
+
+                      def key_write(self, key, key_name):
+                          with open(key_name, 'wb') as mykey:
+                              mykey.write(key)
+
+                      def key_load(self, key_name):
+                          with open(key_name, 'rb') as mykey:
+                              key = mykey.read()
+                          return key
+
+
+                      def file_encrypt(self, key, original_file, encrypted_file):
+                          
+                          f = Fernet(key)
+
+                          with open(original_file, 'rb') as file:
+                              original = file.read()
+
+                          encrypted = f.encrypt(original)
+
+                          with open (encrypted_file, 'wb') as file:
+                              file.write(encrypted)
+
+                      def file_decrypt(self, key, encrypted_file, decrypted_file):
+                          
+                          f = Fernet(key)
+
+                          with open(encrypted_file, 'rb') as file:
+                              encrypted = file.read()
+
+                          decrypted = f.decrypt(encrypted)
+
+                          with open(decrypted_file, 'wb') as file:
+                              file.write(decrypted)
+
+                  if __name__ == '__main__':
+                      encryptor=Encryptor()
+                      mykey=encryptor.key_create()
+                      encryptor.key_write(mykey, 'mykey.key')
+                      loaded_key=encryptor.key_load('mykey.key')
+
+                      original_file = input("Please input your file name to encrypt: ")
+                      processed_file = input("Please input name for processed file: ")
+                      process = input("Please input E for encryt or D for decrypt: ")
+
+
+                      if process == "E":
+                          encryptor.file_encrypt(loaded_key, original_file, processed_file)
+                      encryptor.file_decrypt(loaded_key, original_file, processed_file)
+
+                </code>
+              </pre> 
+            </div>
+            <p>I am generally just getting introduced to python cryptography and encryption so i kind of choose the approach with available information and ease of Understanding</p>
+
+            <p>However, In regards to being able to meet GDPR standard,the standard mainly requires that measures are applied to the affected data and in particular in the context of what we cover here, those measures should result in the fact that the personal data are unintelligible to anyone who isn’t authorized to access them</p>
+
+            <p>As such, as long as the encryption keys are properly managed, the encryption approach should be enough to cater for GDPR requirement</p>
+
+          </article>
+        </li>
+
         </ul>
       <!-- ################################################################################################ -->
     </div>
