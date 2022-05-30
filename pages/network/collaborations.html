@@ -10,7 +10,7 @@ Licence URI: https://www.os-templates.com/template-terms
 <html lang="">
 <!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
 <head>
-<title>Portfoliq | Pages | Full Width</title>
+<title>Portfolio | Pages | Full Width</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="../../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
@@ -64,8 +64,8 @@ Licence URI: https://www.os-templates.com/template-terms
     <!-- ################################################################################################ -->
     <ul>
       <li><a href="../../index.html">Home</a></li>
-      <li><a href="../../pages/secure-module.html">Secure Software Development</a></li>
-      <li><a href="secure/collaborations.html">Collaborations</a></li>
+      <li><a href="../../pages/network-module.html">Network</a></li>
+      <li><a href="network/collaborations.html">Collaborations</a></li>
     </ul>
     <!-- ################################################################################################ -->
   </div>
@@ -144,50 +144,7 @@ Licence URI: https://www.os-templates.com/template-terms
       <div class="clear"></div>
 
       </section>
-
-      <section id="initial_post2_usr2">
-
-        <h1 class="heading">Collaborative Discussion 2: Cryptography case study: TrueCrypt - By Yin Ping Lai</h1>
-        <p>
-          
-          The TrueCrypt suite was one of the well-known disk encryption tools in the PC world, but it was discounted in 2014. Andreas J. and Nicolas G. (2014) reviewed the bootloader and the Windows kernel driver source code and discovered a branch of security vulnerabilities from the TrueCrypt suites. In addition, the analysis report also revealed the TrueCrypt source code had a bad code quality and standard, which was too hard to maintain.
-        </p>
-        <p>
-          
-          From the analysis report, the most severe attack is the problem of using the weak derivation algorithm to encrypt the volume header. It used the PBKDF2 algorithm to encrypt the TrueCrypt header, and developers declared a few iteration counts during the encryption process. As a result, the attacker can exploit this weakness to acquire the encrypted TrueCrypt volume and extract data from it.
-        
-        </p>
-
-        <p>
-          
-          Below Ontology figures show the relationship, weakness, and severity of those identified vulnerabilities.
-        </p>
-
-        <p>
-          If I get a chance to recommend it to my friend someday, I will add a caveat: "All your data will be exposed eventually and should consider alternative option instead" message for them. Moreover, as we can see, there are many ways to decrypt and acquire data without authorized access from Pranshu B. (2015)’s post. Consequently, TrueCrypt is not a secure data encryption tool for protecting your data. It has chances of data exposure, and we should not use it anymore.
-        </p>
-
-        <p>
-          <img src="../../images/secure/lin1.png">
-          <img src="../../images/secure/lin2.png">
-        </p>
-
-        <p>
-          
-          [1] Andreas, J. & Nicolas, G. (2014) Open Crypto Audit Project TrueCrypt Security Assessment. [Online] Available from: https://opencryptoaudit.org/reports/iSec_Final_Open_Crypto_Audit_Project_TrueCrypt_Security_Assessment.pdf. [Accessed on 8 May 2022]. 
-
-        </p>
-
-        <p>
-
-          [2] Pranshu B. (2015) TrueCrypt Security: Securing Yourself against Practical TrueCrypt Attacks. [Online] Available from: https://resources.infosecinstitute.com/topic/defeating-truecrypt-practical-attacks-truecrypt-security/. [Accessed on 9 May 2022].
-        </p>
-      <div class="clear"></div>
-      <div class="clear"></div>
-      <div class="clear"></div>
-
-      </section>
-
+<!-- 
       <section id="initial_post2_usr2_re" style="margin: 50px;">
 
         <h1 class="heading">Collaborative Discussion 2: Cryptography case study: TrueCrypt Response to Yin Pai Ling</h1>
@@ -202,28 +159,9 @@ Licence URI: https://www.os-templates.com/template-terms
       <div class="clear"></div>
       <div class="clear"></div>
 
-      </section>
+      </section> -->
 
-      <section id="initial_post2_summary">
 
-        <h1 class="heading">Collaborative Discussion 2: Cryptography case study: TrueCrypt Summary Post</h1>
-        <p>On 28 May 2014, the TrueCrypt official website, truecrypt.org, began redirecting visitors to truecrypt.sourceforge.net with a HTTP 301 "Moved Permanently" status, which warned that the software may contain unfixed security issues, and that development of TrueCrypt was ended in May 2014, following Windows XP's end of support. The message noted that more recent versions of Windows have built-in support for disk encryption using BitLocker, and that Linux and OS X had similar built-in solutions, which the message states renders TrueCrypt unnecessary. The page recommends any data encrypted by TrueCrypt be migrated to other encryption setups and offered instructions on moving to BitLocker. The SourceForge project page for the software at sourceforge.net/truecrypt was updated to display the same initial message, and the status was changed to "inactive."The page also announced a new software version, 7.2, which only allows decryption. </p>
-        <p>Initially, the authenticity of the announcement and new software was questioned. Multiple theories attempting to explain the reason behind the announcement arose throughout the tech community. According to the author, TrueCrypt does not guaranty physical security as stated In its documentation that "TrueCrypt is unable to secure data on a computer if an attacker physically accessed it and TrueCrypt is used on the compromised computer by the user again (this does not apply to a common case of a stolen, lost, or confiscated computer). The attacker having physical access to a computer can, for example, install a hardware/software keylogger, a bus-mastering device capturing memory, or install any other malicious hardware or software, allowing the attacker to capture unencrypted data (including encryption keys and passwords), or to decrypt encrypted data using captured passwords or encryption keys. Therefore, physical security is a basic premise of a secure system. </p>
-        <p>Additionally, sequel to the feedback I have gotten from my peers many suggestions has been made in their posts, I will also propose alternate solutions, such as VeraCrypt or BitLocker.  </p>
-        <p>TrueCrypt stores its keys in RAM; on an ordinary personal computer the DRAM will maintain its contents for several seconds after power is cut (or longer if the temperature is lowered). Even if there is some degradation in the memory contents, various algorithms can intelligently recover the keys. This method, known as a cold boot attack (which would apply in particular to a notebook computer obtained while in power-on, suspended, or screen-locked mode), has been successfully used to attack a file system protected by TrueCrypt. </p>
-        
-        <p>Gibson, Steve (5 June 2014), TrueCrypt, the final release, archive, Gibson Research Corporation, retrieved 1 August 2014.</p>
-        <p>Ratliff, Evan (29 April 2016). "The Next Big Deal". Retrieved 1 May 2016. </p>
-        <p> "Version History" (PDF). TrueCrypt User's Guide, version 3.1a. TrueCrypt Foundation. 7 February 2005. Archived (PDF) from the original on 30 December 2008. Retrieved 2 March 2017.  </p>
-        <p> Tc-foundation (28 May 2014). "TrueCrypt project page". SourceForge. Archived from the original on 30 May 2014. Retrieved 30 May 2014. </p>
-        <p>Goodin, Dan (28 May 2014), ""TrueCrypt is not secure," official SourceForge page abruptly warns", Ars Technica, Condé Nast, retrieved 28 May 2014. </p>
-        <p>Goodin, Dan (29 May 2014), "Bombshell TrueCrypt advisory: Backdoor? Hack? Hoax? None of the above?", Ars Technica, Condé Nasta, retrieved 29 May 2014. </p>
-
-      <div class="clear"></div>
-      <div class="clear"></div>
-      <div class="clear"></div>
-
-      </section>
 
   </main>
 </div>
