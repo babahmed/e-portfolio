@@ -65,7 +65,7 @@ Licence URI: https://www.os-templates.com/template-terms
     <ul>
       <li><a href="../../index.html">Home</a></li>
       <li><a href="../../pages/secure-module.html">Secure Software Development</a></li>
-      <li><a href="secure/reflection.html">Reflection</a></li>
+      <li><a href="research/reflection.html">Reflection</a></li>
     </ul>
     <!-- ################################################################################################ -->
   </div>
@@ -84,67 +84,15 @@ Licence URI: https://www.os-templates.com/template-terms
 
       <section id="introduction">
 
-        <p>
-          The general discussion in unit one was the introduction to secure software development. The course highlights the difference between waterfall and Agile one being predictive and the other being adaptive. This is fair enough as it provides the basis to software development approaches, but I have heard Rapid application development approach In interviews and I felt this was also having its fair share of the popularly adopted approaches. I further did a check on it and compared with the two popular approaches. OWASP is not new to me being in the tech space but I found the top 10 proactive approach a better summary to preventing these vulnerabilities that could come in handy being at the back of my mind while coding.
-          My colleagues provided some interesting follow-up on my post on Server-side request forgery (SSRF) https://babahmed.github.io/e-portfolio/pages/secure/collaborations.html#initial_post . It was obvious from the response that Ian Wolloff had better understand of how this works than I did with a further insight on how a request from local machine can trick the firewall to assume it is from a trusted internal host.
-        </p>
+        <h1 class="heading">Reflection</h1>
 
-        <p>
-          In Unit 3, we went through the history, paradigm, and accepted norms in the programming world. I come to understand the difference between a compiled and interpreted language and how it affects process such as debugging, and operation of programs written in such languages. I have always preferred compiled languages only because I believe it is more secure in a financial environment as the compiled code need to be deployed as against the open code files which can be modified at deployment environment. I have worked mainly with the factory and mediator pattern in c#, I will need to investigate how the adapter pattern is applicable to c# as well. The exercises explained how linters works and how they are unable to provide suggestion to some input based validation such as an array and its size to prevent stack overflow. 
-        </p>
-
-        <p>https://babahmed.github.io/e-portfolio/pages/secure/coding.html#buffer_overflow</p>
-        <p>https://babahmed.github.io/e-portfolio/pages/secure/coding.html#producer</p>
-
-        <p>
-          In Unit 4, we were introduced to Regex and recursion. I personally do not like regex and avoid using it. This is partly because I have limited knowledge about it. This unit’s deliverable required that I spend sometimes looking into it. Even thou I still have my reservations; I think I am now in a better place with the concept. For recursion, it is a familiar concept to me. One of my first project was to loop through a directory and its folders and files and this I needed to do recursively. Recursion basically provide you the ability to reuse your code to perform function that requires iteration. The question the limits on iteration made me understand that there is an actual limit set on recursive function and can be overridden in configuration. 
-        </p>
-
-        <p>https://babahmed.github.io/e-portfolio/pages/secure/coding.html#recursion</p>
-        <p>https://babahmed.github.io/e-portfolio/pages/secure/coding.html#regex</p>
-
-        <p>
-          In Unit 5, I was introduced to some newer concepts in python, Pylint is more popular than flake8 and mccabe both for checking the standard of code style and programming errors. Ordinarily, visual studio does this out of the box, but code complexity requires addon such as sonarlint for sonarqube to identify this complexity. Also, running the command against the code was a new approach for me as I was used to having the IDE list out the antipatterns and update the list once fixed.
-        </p>
-
-        <p>https://babahmed.github.io/e-portfolio/pages/secure/coding.html#recursion</p>
-        <p>https://babahmed.github.io/e-portfolio/pages/secure/coding.html#regex</p>
-
-        <p>
-          During our groups project planning, we spoke about big technologies to incorporate into our implementation. I drafted the authorization documentation and created the tentative api documentation based on the models provided by Alberto. I knew I was quite weak with python so we opted to use a javascript library for the frontend and have Alberto handle the backend. I think our biggest challenge was overestimating the skill set of each member and also the time to completion for dependent implementation such as the API before the ui get to kickoff. More about this in its section. 
-        </p>
-
-        <p>
-          The research of Jerome Saltzer and Michael Schroeder was my vocal point in unit 7, these are basically the checklist that must be adhered to before any product goes live. This resonates with some of the flags usually raised by audit or information security in my organization before approval of any application. It is paramount that these be factored into the development process itself. 
-        </p>
-
-        <p>
-          Apart from some task that requires you writing shell script, you can also use shell scripts to automate you normal activities on your machine. This is what I found out and I went searching for one that could remind me my battery percentage to prevent overcharging my laptop. I have this on startup now and I get prompted whenever my battery is at 96%.
-        </p>
-
-        <p>https://babahmed.github.io/e-portfolio/pages/secure/coding.html#shell</p>
-
-        <p>
-          I still do not understand the basics of Ontology, this would be my take home for personal development from this module.
-        </p>
-
-        <p>
-          Unit 8 opened with the discussion on TrueCrypt. I am quite conversant with the concept of encryption and cryptography, but I am not sure I had heard of TrueCrypt before this module. Partly due to its continuation. It was, however, interesting, to look into how it works and I could conclude that it served as a reference point for current encryption mechanism such as bitlocker. Although, I would advice user with caveat as I believed the program still provided the required security under certain circumstances Pavendran analysis and detailed argument proved that the program was indeed vulnerable. I suggested an alternative as VeraCrypt and Yin advised that the compares be listed but this has been done already by another colleague on further check.
-        </p>
-
-        <p>https://babahmed.github.io/e-portfolio/pages/secure/collaborations.html#initial_post2</p>
-
-        <p>
-          Unit 9 and 10 reviews api and micro architecture. While I strongly support micro-architecture in a distributed and large-scale environment due to its ease of onboarding developers, code maintenance and change management. I tend to go against small application or poc being developed using this approach.  
-        </p>
-
-        <p>
-          Our final project was presented, and thou we felt intimidated by other presentations, we managed to pull it off. Some of the challenges we faced was the complication in the implementation, at some point, only few of us understood what we were doing. The goal was clear, but the implementation was getting quite complex. Initially I was going to assist with the put and pagination API and unit testing, but the project layout was quite an issue. I went into fasting during this period and temporarily disconnected with the team. When I got back to contribute, it was much more complex that I left. To begin with, I could not run the application locally and had to depend on the swagger generated to from the project to try and etch out the UI template. Some of the thing we could have done better was to host the api for eaze of implementation. This way, there would be no dependencies to running the application locally. I have looked through the documentation on how the applications were coupled together will continue to work on understanding the stack. I count is as part of the purpose of the learning and some of the expected outcome.  I plan to do better when faced with such scenario again.
-        </p>
-
-        <p>
-          Overall, this was quite challenging for me. Python remains the language I am weakest at and the course heavily relies on this through assignments and projects but I cannot deny that this has forced me to improve my python skills and I plan on continuing to improve on this milestone to get myself to a comfortable level for the next challenge.
-        </p>
+        <a href="../../images/research/ReflectionModule.docx">
+          <img src="https://1000logos.net/wp-content/uploads/2020/08/Microsoft-PowerPoint-Logo.png" alt="evaluation" style="width:42px;height:42px;">
+          Reflection
+        </a>
+      <div class="clear"></div>
+      <div class="clear"></div>
+      <div class="clear"></div>
         
       </section>
 
